@@ -2,7 +2,7 @@
  * File              : config.h
  * Author            : Tristan <15997232823@163.com>
  * Date              : Sun May 10 2020 18:51:11 PM CST
- * Last Modified Date: Sun May 10 2020 20:09:34 PM CST
+ * Last Modified Date: Sun May 10 2020 20:56:56 PM CST
  * Last Modified By  : Tristan <15997232823@163.com>
  */
 /* See LICENSE file for copyright and license details. */
@@ -185,6 +185,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
     /* mask                 button   function        argument       release */
+    { ShiftMask, Button4, kscrollup, { .i = 1 } },
+    { ShiftMask, Button5, kscrolldown, { .i = 1 } },
     { XK_ANY_MOD, Button2, selpaste, { .i = 0 }, 1 },
     { XK_ANY_MOD, Button4, ttysend, { .s = "\031" } },
     { XK_ANY_MOD, Button5, ttysend, { .s = "\005" } },
