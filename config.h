@@ -2,7 +2,7 @@
  * File              : config.h
  * Author            : Tristan <15997232823@163.com>
  * Date              : Sun May 10 2020 18:51:11 PM CST
- * Last Modified Date: Sun May 10 2020 20:00:26 PM CST
+ * Last Modified Date: Sun May 10 2020 20:09:34 PM CST
  * Last Modified By  : Tristan <15997232823@163.com>
  */
 /* See LICENSE file for copyright and license details. */
@@ -212,6 +212,7 @@ static Shortcut shortcuts[] = {
     { MODKEY | ControlMask, XK_e, kscrolldown, { .i = -1 } },
     { MODKEY, XK_u, kscrollup, { .i = 1 } },
     { MODKEY, XK_e, kscrolldown, { .i = 1 } },
+    { MODKEY, XK_l, copyurl, { .i = 0 } },
 };
 
 /*
