@@ -2,7 +2,7 @@
  * File              : config.h
  * Author            : Tristan <15997232823@163.com>
  * Date              : Sun May 10 2020 18:51:11 PM CST
- * Last Modified Date: Sun May 10 2020 20:56:56 PM CST
+ * Last Modified Date: Mon May 11 2020 15:09:31 PM CST
  * Last Modified By  : Tristan <15997232823@163.com>
  */
 /* See LICENSE file for copyright and license details. */
@@ -100,30 +100,56 @@ unsigned int tabspaces = 8;
 float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
+//static const char* colorname[] = {
+//    /* 8 normal colors */
+//    [0] = "#000000", /* black   */
+//    [1] = "#ff5555", /* red     */
+//    [2] = "#50fa7b", /* green   */
+//    [3] = "#f1fa8c", /* yellow  */
+//    [4] = "#bd93f9", /* blue    */
+//    [5] = "#ff79c6", /* magenta */
+//    [6] = "#8be9fd", /* cyan    */
+//    [7] = "#bbbbbb", /* white   */
+//
+//    /* 8 bright colors */
+//    [8] = "#44475a",  /* black   */
+//    [9] = "#ff5555",  /* red     */
+//    [10] = "#50fa7b", /* green   */
+//    [11] = "#f1fa8c", /* yellow  */
+//    [12] = "#bd93f9", /* blue    */
+//    [13] = "#ff79c6", /* magenta */
+//    [14] = "#8be9fd", /* cyan    */
+//    [15] = "#ffffff", /* white   */
+//
+//    /* special colors */
+//    [256] = "#282a36", /* background */
+//    [257] = "#f8f8f2", /* foreground */
+//};
+
 static const char* colorname[] = {
     /* 8 normal colors */
-    [0] = "#000000", /* black   */
-    [1] = "#ff5555", /* red     */
-    [2] = "#50fa7b", /* green   */
-    [3] = "#f1fa8c", /* yellow  */
-    [4] = "#bd93f9", /* blue    */
-    [5] = "#ff79c6", /* magenta */
-    [6] = "#8be9fd", /* cyan    */
-    [7] = "#bbbbbb", /* white   */
+    [0] = "#282a36", /* black   */
+    [1] = "#ff5c57", /* red     */
+    [2] = "#5af78e", /* green   */
+    [3] = "#f3f99d", /* yellow  */
+    [4] = "#57c7ff", /* blue    */
+    [5] = "#ff6ac1", /* magenta */
+    [6] = "#9aedfe", /* cyan    */
+    [7] = "#f1f1f0", /* white   */
 
     /* 8 bright colors */
-    [8] = "#44475a",  /* black   */
-    [9] = "#ff5555",  /* red     */
-    [10] = "#50fa7b", /* green   */
-    [11] = "#f1fa8c", /* yellow  */
-    [12] = "#bd93f9", /* blue    */
-    [13] = "#ff79c6", /* magenta */
-    [14] = "#8be9fd", /* cyan    */
-    [15] = "#ffffff", /* white   */
+    [8] = "#686868",  /* black   */
+    [9] = "#ff5c57",  /* red     */
+    [10] = "#5af78e", /* green   */
+    [11] = "#f3f99d", /* yellow  */
+    [12] = "#57c7ff", /* blue    */
+    [13] = "#ff6ac1", /* magenta */
+    [14] = "#9aedfe", /* cyan    */
+    [15] = "#f1f1f0", /* white   */
 
     /* special colors */
     [256] = "#282a36", /* background */
-    [257] = "#f8f8f2", /* foreground */
+    [257] = "#eff0eb", /* foreground */
 };
 
 /*
@@ -214,7 +240,7 @@ static Shortcut shortcuts[] = {
     { MODKEY | ControlMask, XK_e, kscrolldown, { .i = -1 } },
     { MODKEY, XK_u, kscrollup, { .i = 1 } },
     { MODKEY, XK_e, kscrolldown, { .i = 1 } },
-    { MODKEY, XK_l, copyurl, { .i = 0 } },
+    { MODKEY | ControlMask, XK_l, copyurl, { .i = 0 } },
 };
 
 /*
